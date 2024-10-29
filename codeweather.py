@@ -19,9 +19,9 @@ def translate_weather_description(description):
     return translations.get(description, description)
 
 def get_weather(city, api_key):
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
     try:
-        response = requests.get(url, timeout=10)  # Set timeout to 10 seconds
+        response = requests.get(url, timeout=10)
         if response.status_code == 200:
             data = response.json()
             weather = translate_weather_description(data['weather'][0]['description'])
