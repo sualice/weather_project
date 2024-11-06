@@ -8,6 +8,8 @@ def translate_weather_description(description):
     "broken clouds": "облачно",
     "overcast clouds": "пасмурно",
     "drizzle": "мелкий дождь",
+    "drizzle": "морось",
+    "haze": "легкий туман",
     "rain": "дождь",
     "shower rain": "ливневый дождь",
     "thunderstorm": "гроза",
