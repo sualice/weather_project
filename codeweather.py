@@ -9,7 +9,9 @@ def translate_weather_description(description):
         "scattered clouds": "облачно",
         "broken clouds": "облачно",
         "overcast clouds": "пасмурно",
-        "drizzle": "мелкий дождь",
+        "drizzle": "морось",
+        "haze": "легкий туман",
+        "light rain": "мелкий дождь",
         "rain": "дождь",
         "shower rain": "ливневый дождь",
         "thunderstorm": "гроза",
@@ -87,7 +89,7 @@ city_label.pack(padx=10, pady=10)
 city_entry = tk.Entry(root, width=30)
 city_entry.pack(padx=10, pady=10)
 
-button = tk.Button(root, text="Посмотреть прогноз", command=show_weather, bg="#FFFFFF")
+button = tk.Button(root, text="Посмотреть погоду", command=show_weather, bg="#FFFFFF")
 button.pack(padx=10, pady=10)
 
 weather_label = tk.Label(root, text="", bg="#AFEEEE", wraplength=400)
